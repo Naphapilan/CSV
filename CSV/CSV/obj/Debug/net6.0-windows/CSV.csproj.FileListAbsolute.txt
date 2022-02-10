@@ -1,0 +1,17 @@
+C:\Users\ADmin\Documents\GitHub\CSV\CSV\CSV\obj\Debug\net6.0-windows\CSV.csproj.AssemblyReference.cache
+C:\Users\ADmin\Documents\GitHub\CSV\CSV\CSV\obj\Debug\net6.0-windows\CSV.Form1.resources
+C:\Users\ADmin\Documents\GitHub\CSV\CSV\CSV\obj\Debug\net6.0-windows\CSV.csproj.GenerateResource.cache
+C:\Users\ADmin\Documents\GitHub\CSV\CSV\CSV\obj\Debug\net6.0-windows\CSV.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADmin\Documents\GitHub\CSV\CSV\CSV\obj\Debug\net6.0-windows\CSV.AssemblyInfoInputs.cache
+C:\Users\ADmin\Documents\GitHub\CSV\CSV\CSV\obj\Debug\net6.0-windows\CSV.AssemblyInfo.cs
+C:\Users\ADmin\Documents\GitHub\CSV\CSV\CSV\obj\Debug\net6.0-windows\CSV.csproj.CoreCompileInputs.cache
+C:\Users\ADmin\Documents\GitHub\CSV\CSV\CSV\bin\Debug\net6.0-windows\CSV.exe
+C:\Users\ADmin\Documents\GitHub\CSV\CSV\CSV\bin\Debug\net6.0-windows\CSV.deps.json
+C:\Users\ADmin\Documents\GitHub\CSV\CSV\CSV\bin\Debug\net6.0-windows\CSV.runtimeconfig.json
+C:\Users\ADmin\Documents\GitHub\CSV\CSV\CSV\bin\Debug\net6.0-windows\CSV.dll
+C:\Users\ADmin\Documents\GitHub\CSV\CSV\CSV\bin\Debug\net6.0-windows\ref\CSV.dll
+C:\Users\ADmin\Documents\GitHub\CSV\CSV\CSV\bin\Debug\net6.0-windows\CSV.pdb
+C:\Users\ADmin\Documents\GitHub\CSV\CSV\CSV\obj\Debug\net6.0-windows\CSV.dll
+C:\Users\ADmin\Documents\GitHub\CSV\CSV\CSV\obj\Debug\net6.0-windows\ref\CSV.dll
+C:\Users\ADmin\Documents\GitHub\CSV\CSV\CSV\obj\Debug\net6.0-windows\CSV.pdb
+C:\Users\ADmin\Documents\GitHub\CSV\CSV\CSV\obj\Debug\net6.0-windows\CSV.genruntimeconfig.cache
