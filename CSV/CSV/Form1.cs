@@ -19,10 +19,7 @@ namespace CSV
             if(openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string[]readAllLine = File.ReadAllLines(openFileDialog.FileName);
-                string readAllText = File.ReadAllText(openFileDialog.FileName);
-                //this.textBoxDisplayData.Text = readAllText;
-                //this.dataGridView1.Rows.Add()
-
+             
                 for(int i = 0; i < readAllLine.Length; i++)
                 {
                     string studentRAW = readAllLine[i];
@@ -31,7 +28,7 @@ namespace CSV
                     //addDataToGridView(student);
                     //TODO Add Student object to DataGridView
                 }
-                
+                //TODO : calculate max,min,gpax
             }
         }
         private void addDataToGridView(string id,string name,string major) {
@@ -41,6 +38,7 @@ namespace CSV
         {
             
             string filepath =string.Empty;
+
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "CSV (*.csv)|*.csv";
             if(saveFileDialog.ShowDialog() == DialogResult.OK)
@@ -54,8 +52,12 @@ namespace CSV
                         int column = this.dataGridView1.Columns.Count;
                         for(int j = 0; j< column; j++)
                         {
-                            strData = this.dataGridView1.Rows[i].Cells[j].Value.ToString();
-                            //TODO save data from dataGridView1 to variable
+                            if (this.dataGridView1.Rows[i].Cells[j].Value != null) 
+                            { 
+                                strData = this.dataGridView1.Rows[i].Cells[j].Value.ToString();
+                                //TODO save data from dataGridView1 to variable
+                            }
+                            
                         }
                     }
                     //save file
@@ -65,6 +67,10 @@ namespace CSV
             }
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //TODO add data to dataGridView
+            //TODO CalCulate GPA,Max,Min
+        }
     }
 }
