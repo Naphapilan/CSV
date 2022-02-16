@@ -15,3 +15,6 @@ C:\Users\ADmin\Documents\GitHub\CSV\CSV\CSV\obj\Debug\net6.0-windows\CSV.dll
 C:\Users\ADmin\Documents\GitHub\CSV\CSV\CSV\obj\Debug\net6.0-windows\ref\CSV.dll
 C:\Users\ADmin\Documents\GitHub\CSV\CSV\CSV\obj\Debug\net6.0-windows\CSV.pdb
 C:\Users\ADmin\Documents\GitHub\CSV\CSV\CSV\obj\Debug\net6.0-windows\CSV.genruntimeconfig.cache
+C:\Users\user\Documents\GitHub\CSV\CSV\CSV\obj\Debug\net6.0-windows\CSV.dll
+C:\Users\user\Documents\GitHub\CSV\CSV\CSV\obj\Debug\net6.0-windows\ref\CSV.dll
+C:\Users\user\Documents\GitHub\CSV\CSV\CSV\obj\Debug\net6.0-windows\CSV.pdb

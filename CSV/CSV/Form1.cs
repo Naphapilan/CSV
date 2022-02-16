@@ -1,7 +1,11 @@
+using System.Text;
+
 namespace CSV
 {
     public partial class Form1 : Form
     {
+        private string? strData;
+
         public Form1()
         {
             InitializeComponent();
@@ -9,28 +13,58 @@ namespace CSV
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Create openfiledialog
+            
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            openFileDialog.Filter = "CSV(*.csv)|*.csv";
+            if(openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                string filepath = openFileDialog.FileName;
-                string data = File.ReadAllText(filepath);
-                this.textBoxDisplayData.Text = data;
+                string[]readAllLine = File.ReadAllLines(openFileDialog.FileName);
+                string readAllText = File.ReadAllText(openFileDialog.FileName);
+                //this.textBoxDisplayData.Text = readAllText;
+                //this.dataGridView1.Rows.Add()
+
+                for(int i = 0; i < readAllLine.Length; i++)
+                {
+                    string studentRAW = readAllLine[i];
+                    string[] studentSplited = studentRAW.Split(',');
+                    Student student = new Student(studentSplited[0], studentSplited[1], studentSplited[2]);
+                    //addDataToGridView(student);
+                    //TODO Add Student object to DataGridView
+                }
+                
             }
         }
+        private void addDataToGridView(string id,string name,string major) {
+            this.dataGridView1.Rows.Add(new string[] {id,name,major}); }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ///get text from textboox
-            string data = this.textBoxDisplayData.Text;
+            
+            string filepath =string.Empty;
             SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "CSV|*.csv";
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            saveFileDialog.Filter = "CSV (*.csv)|*.csv";
+            if(saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-                string filepath = saveFileDialog.FileName;
-                ///save to file
-                File.WriteAllText(filepath, data, System.Text.Encoding.UTF8);
+                if(saveFileDialog.FileName != string.Empty)
+                {
+                  
+                    int row = this.dataGridView1.Rows.Count;
+                    for(int i = 0; i< row; i++) 
+                    {
+                        int column = this.dataGridView1.Columns.Count;
+                        for(int j = 0; j< column; j++)
+                        {
+                            strData = this.dataGridView1.Rows[i].Cells[j].Value.ToString();
+                            //TODO save data from dataGridView1 to variable
+                        }
+                    }
+                    //save file
+                    File.WriteAllText(saveFileDialog.FileName, strData, Encoding.UTF8);
+
+                }
             }
         }
+
+
     }
 }
